@@ -1,4 +1,6 @@
 <?php
+namespace App\Request;
+
 class Get{
     public static function all(){
         return (null != filter_input_array(INPUT_GET) ? filter_input_array(INPUT_GET) : null);

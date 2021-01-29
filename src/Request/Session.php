@@ -1,4 +1,6 @@
 <?php
+namespace App\Request;
+
 class Session{
     
     public static function all(){

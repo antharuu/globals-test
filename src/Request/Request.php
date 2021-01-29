@@ -1,4 +1,6 @@
 <?php
+namespace App\Request;
+
 class Request{
     public $get;
     public $post;
