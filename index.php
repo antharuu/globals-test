@@ -1,12 +1,9 @@
 <?php
-session_start();
-require_once 'Get.php';
-require_once 'Session.php';
+require_once 'Request.php';
 
-$test = Get::key("test");
+$request = new Request;
+
+$test = $request->get;
 
 var_dump($test);
 
-Session::set("test", "brouette");
-
-var_dump(Session::all());
